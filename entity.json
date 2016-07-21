@@ -1,18 +1,18 @@
 ﻿{
   "Version": 1,
-  "Name": "Al Presidente",
-  "Alias": "alpresidente",
+  "Name": "Tuo Nome",
+  "Alias": "tuonome",
   "Note": "",
-  "Address": "Via Pallavicini 42/B Desio",
-  "Latitude": "45.618737",
-  "Longitude": "9.1970984",
-  "Website": "https://www.facebook.com/Al-Presidente-625461680839276",
+  "Address": "Via Milano, Desio",
+  "Latitude": "45.615602",
+  "Longitude": " 9.215486",
+  "Website": "https://www.facebook.com/PizzaPrezzi",
   "Contact": [
     {
-      "Value": "0362629985"
+      "Value": "03620000"
     },
     {
-      "Value": "3899947966"
+      "Value": "3390000000"
     }
   ],
   "GalleryMenu": [
