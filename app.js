@@ -35,7 +35,11 @@ $scope.removeItem = function(item) {
     .then(function(response) {
         $scope.entity = response.data;
     });
-	
+    
+ $http.get("https://www.pizzaprezzi.it/json/firma.json")
+    .then(function(response) {
+        $scope.foot = response.data;
+    });	
 	
   $scope.pageChangeHandler = function(num) {
       
