@@ -106,8 +106,8 @@
 			</thead>
 			<tbody>
 				<tr ng-repeat="p in c.Entities">
-					<td><div  ng-repeat="pr in p.Prices"><button  class="btn btn-success" ng-click="addItem(p,pr)"><i class="fa fa-cart-plus" aria-hidden="true"></i> {{c.Prices[$index].Value }} {{pr.Value|currency}}</button></div></td>
-					<td><b>{{ p.Name }}</b><p><small><span ng-repeat="i in p.Items">{{ i.Value }}, </span></small></p></td>
+					<td width="20%"><div  ng-repeat="pr in p.Prices"><button  class="btn btn-success" ng-click="addItem(p,pr)"><i class="fa fa-cart-plus" aria-hidden="true"></i> {{c.Prices[$index].Value }} {{pr.Value|currency}}</button></div></td>
+					<td width="80%"><b>{{ p.Name }}</b><p><small><span ng-repeat="i in p.Items">{{ i.Value }}, </span></small></p></td>
 				</tr>
 			</tbody>    
 		</table>
