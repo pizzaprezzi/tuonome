@@ -2,17 +2,19 @@
 <html ng-app="myApp" ng-controller="MyController" class="my-controller">
 
 <head>
+<!--DATI DA INSERIRE FISSI-->
+<title>/*NAME*/ - PizzaPrezzi</title>  	
+<meta property="og:url" content="/*WEBSITEPIZZAPREZZI*/" />
+<meta property="og:title" content="/*NAME*/ - PizzaPrezzi" />
+<meta property="og:description" content="Menu /*NAME*/" />
+<meta name="description" content="/*NAME*/ il tuo menu interattivo by PizzaPrezzi" />
 <!-- meta og -->	
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:url" content="/*WEBSITEPIZZAPREZZI*/" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="/*NAME*/ - PizzaPrezzi" />
-<meta property="og:description" content="Menu tuo nome" />
 <!--
 <meta property="og:image" content="https://raw.githubusercontent.com/infocitta/infocitta.github.io/master/logo.png" />
 -->
 <meta name="keywords" content="" />
-<meta name="description" content="/*NAME*/ il tuo menu interattivo by PizzaPrezzi" />
 <meta property="fb:app_id" content="591996370950973" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <!--
@@ -36,7 +38,7 @@
 <link rel="stylesheet" href="style.css" />
 <script src="app.js"></script>
 <script src="dirPagination.js"></script>
-<title>/*NAME*/ - PizzaPrezzi</title>  
+
 </head>
 
 <body>
@@ -180,7 +182,7 @@
 </div>
 
 <div class="noprint" ng-include="'clausola.html'"></div>
-<p ng-bind-html="foot.Firma"></p>
+<div class="noprint" ng-include="'firma.html'"></div>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-578f8509b8c1ce26"></script>  
 </body>
 
