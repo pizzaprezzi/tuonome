@@ -4,15 +4,15 @@
 <head>
 <!-- meta og -->	
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:url" content="http://tuonome.pizzaprezzi.it/" />
+<meta property="og:url" content="/*WEBSITEPIZZAPREZZI*/" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Tuo nome - PizzaPrezzi" />
+<meta property="og:title" content="/*NAME*/ - PizzaPrezzi" />
 <meta property="og:description" content="Menu tuo nome" />
 <!--
 <meta property="og:image" content="https://raw.githubusercontent.com/infocitta/infocitta.github.io/master/logo.png" />
 -->
 <meta name="keywords" content="" />
-<meta name="description" content="Sito con il menu della tua pizzeria" />
+<meta name="description" content="/*NAME*/ il tuo menu interattivo by PizzaPrezzi" />
 <meta property="fb:app_id" content="591996370950973" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <!--
@@ -36,7 +36,7 @@
 <link rel="stylesheet" href="style.css" />
 <script src="app.js"></script>
 <script src="dirPagination.js"></script>
-<title>{{ entity.Name }} - PizzaPrezzi</title>  
+<title>/*NAME*/ - PizzaPrezzi</title>  
 </head>
 
 <body>
@@ -74,7 +74,7 @@
 	
 	
 	<h2>{{ entity.Name }}</h2>
-	<div class="fb-like noprint" data-href="http://alpresidente.pizzaprezzi.it/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+	<div class="fb-like noprint" data-href="/*WEBSITEPIZZAPREZZI*/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
 	
 	<p>{{ entity.Address }}</p>
 	<div class="list-group">
@@ -106,7 +106,7 @@
 			</thead>
 			<tbody>
 				<tr ng-repeat="p in c.Entities">
-					<td><button  ng-repeat="pr in p.Prices" class="btn btn-success" ng-click="addItem(p,pr)"><i class="fa fa-cart-plus" aria-hidden="true"></i> {{c.Prices[$index].Value }} {{pr.Value|currency}}</button></td>
+					<td><div  ng-repeat="pr in p.Prices"><button  class="btn btn-success" ng-click="addItem(p,pr)"><i class="fa fa-cart-plus" aria-hidden="true"></i> {{c.Prices[$index].Value }} {{pr.Value|currency}}</button></div></td>
 					<td><b>{{ p.Name }}</b><p><small><span ng-repeat="i in p.Items">{{ i.Value }}, </span></small></p></td>
 				</tr>
 			</tbody>    
