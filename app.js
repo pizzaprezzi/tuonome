@@ -20,7 +20,8 @@ function MyController($scope, $http) {
  $scope.addItem = function (item,pr,cat) {
 
         $scope.cart.push({
-            Name: item.Name.concat("\n",cat),
+            Name: item.Name,
+            Cat:cat,
             Price:pr.Value
         });
     };
