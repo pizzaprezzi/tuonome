@@ -157,7 +157,7 @@
 <div class="carousel" id="slider">
     <div class="carousel-inner">
         <div class="item" ng-class="{active:!$index}" ng-repeat="photo in entity.GalleryMenu">
-            <img src="{{ photo.Link }}" class="img-responsive center-block">
+            <img ng-src="{{ photo.Link }}" class="img-responsive center-block">
         </div>
     </div>
 
