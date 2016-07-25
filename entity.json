@@ -1,4 +1,4 @@
-﻿{
+{
   "Version": 1,
   "Name": "Tuo Nome",
   "Alias": "tuonome",
@@ -2213,6 +2213,45 @@
         }
       ],
       "Items": []
-    }
+    },
+{
+         "Name":"Demo Menu Interattivo",
+         "Alias":"demo",
+         "Prices":[
+            {
+               "Value":"Rotonda o 1/4 teglia"
+            },
+            {
+               "Value":"1/2 teglia"
+            },
+            {
+               "Value":"Familiare o teglia"
+            }
+         ],
+         "Entities":[
+            {
+               "Name":"Focaccia Liscia",
+               "Items":[
+                  {
+                     "Value":"Olio"
+                  },
+                  {
+                     "Value":"Origano"
+                  }
+               ],
+               "Prices":[
+                  {
+                     "Value":2.5
+                  },
+                  {
+                     "Value":5.0
+                  },
+                  {
+                     "Value":9.0
+                  }
+               ]
+            }
+         ]
+      }    
   ]
 }
