@@ -17,10 +17,10 @@ function MyController($scope, $http) {
     return total;
 }
 
- $scope.addItem = function (item,pr) {
+ $scope.addItem = function (item,pr,cat) {
 
         $scope.cart.push({
-            Name: item.Name,
+            Name: item.Name.concat(cat),
             Price:pr.Value
         });
     };
