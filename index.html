@@ -125,7 +125,7 @@
 			<tbody>
 				<tr ng-repeat="c in cart  | orderBy:'Name'">
 					<td class="noprint"><button class="btn btn-danger" ng-click="removeItem(c)"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button></td>
-					<td>{{ c.Name }}</td>
+					<td>{{ c.Name }}<p><small>{{ c.Cat }}</small></p></td>
 					<td align="right">{{ c.Price | currency  }}</td>
 				</tr>
 			</tbody>    
