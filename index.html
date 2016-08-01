@@ -80,11 +80,11 @@
 	
 	<p>{{ entity.Address }}</p>
 	<div class="list-group">
-	  <a href="tel:{{ c.Value }}" ng-repeat="c in entity.Contact" class="list-group-item"><h5><i class="fa fa-phone" aria-hidden="true"></i> Chiama {{ c.Value }}</h4></a>
+	  <a ng-href="tel:{{ c.Value }}" ng-repeat="c in entity.Contact" class="list-group-item"><h5><i class="fa fa-phone" aria-hidden="true"></i> Chiama {{ c.Value }}</h4></a>
 	</div>	
 	<div class="list-group noprint" >
-	  <a href="{{ entity.Website }}" class="list-group-item"><h5><i class="fa fa-external-link" aria-hidden="true"></i> Sito Web</h4></a>
-	  <a href="https://maps.google.it/maps?q={{entity.Latitude}},{{entity.Longitude}}" class="list-group-item"><h5><i class="fa fa-map-o" aria-hidden="true"></i> Mappa</h4></a>
+	  <a ng-href="{{ entity.Website }}" class="list-group-item"><h5><i class="fa fa-external-link" aria-hidden="true"></i> Sito Web</h4></a>
+	  <a ng-href="https://maps.google.it/maps?q={{entity.Latitude}},{{entity.Longitude}}" class="list-group-item"><h5><i class="fa fa-map-o" aria-hidden="true"></i> Mappa</h4></a>
 	</div>	
 
 	<button type="button" class="btn btn-info noprint" data-toggle="modal" data-target="#myMenu">Visualizza Depliant</button>
